@@ -28,7 +28,7 @@
 
         body {
 
-            background-image: url("https://sutherlandglobal.azureedge.net/-/media/transforming-pre-travel-experiences-with-ai/travel-blog-thumbnail-2000x1225.webp?rev=49202786-22c4-4dad-b9d7-4ad11d6bb686&hash=54FBAC360AA798E504DE80700681AA78");
+            background-image: url("https://mediaproxy.salon.com/width/1200/https://media.salon.com/2021/09/kingston-family-vineyard-sunset-pinot-noir_0909211.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -46,9 +46,9 @@
 
             backdrop-filter: blur(50px);
 
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(156, 7, 7, 0.575);
 
-            box-shadow: 0 0 80px rgba(8, 7, 16, 0.6);
+            box-shadow: 0 0 80px rgba(157, 5, 5, 0.431);
 
             margin-bottom: 20px;
 
@@ -60,7 +60,7 @@
 
             font-family: 'Poppins', sans-serif;
 
-            color: rgba(247, 247, 248, 0.933);
+            color: rgba(246, 245, 245, 0.935);
 
             letter-spacing: 0.5px;
 
@@ -80,7 +80,7 @@
 
             width: 95%;
 
-            background-color: rgba(255, 255, 255, 0.07);
+            background-color: rgba(97, 3, 3, 0.569);
 
             border-radius: 10px;
 
@@ -98,7 +98,7 @@
 
         ::placeholder {
 
-            color: rgba(247, 247, 248, 0.933);
+            color: rgba(251, 239, 239, 0.902);
 
         }
 
@@ -112,7 +112,7 @@
 
     <div class="container-fluid">
 
-        <div class="row justify-content-start">
+        <div class="row justify-content-end">
 
             <div class="co col-11 col-md-5 mt-4">
 
@@ -120,45 +120,37 @@
 
                     <div class="login mt-4">
 
-                        <h1 class="text-light">Flight Fare Prediction</h1>
+                        <h1 class="text-darkred">Redwine Quality</h1>
 
                         <form class="p-3" action="{{ url_for('predict')}}" method="post">
 
-                            <input type="text" name="Airline" placeholder="Airline" required="required" /><br>
+                            <input type="text" name="fixed acidity" placeholder="fixed acidity" required="required" /><br>
 
-                            <input type="text" name="Source" placeholder="Source"
-
-                                required="required" /><br>
-
-                            <input type="text" name="Destination" placeholder="Destinationh" required="required" /><br>
-
-                            <input type="text" name="Route" placeholder="Route"
+                            <input type="text" name="residual sugar" placeholder="residual sugar"
 
                                 required="required" /><br>
 
-                            <input type="text" name="Total_Stops" placeholder="Total_Stops" required="required" /><br>
-                            <input type="text" name="Additional_Info" placeholder="Additional_Info" required="required" /><br>
+                            <input type="text" name="chlorides" placeholder="chlorides" required="required" /><br>
 
-                            <input type="text" name="Duration" placeholder="Duration"
-
-                                required="required" /><br>
-
-                            <input type="text" name="Journey_day" placeholder="Journey_day" required="required" /><br>
-
-                            <input type="text" name="Journey_month" placeholder="Journey_month"
+                            <input type="text" name="total sulfur dioxide" placeholder="total sulfur dioxide"
 
                                 required="required" /><br>
 
-                            <input type="text" name="Dep_hour" placeholder="Dep_hour" required="required" /><br>
-                            <input type="text" name="Dep_min" placeholder="Dep_min" required="required" /><br>
-
-                            <input type="text" name="Arr_hrs" placeholder="Arr_hrs"
+                            <input type="text" name="density" placeholder="density" required="required" /><br>
+                            
+                            <input type="text" name="pH" placeholder="pH"
 
                                 required="required" /><br>
 
-                            <input type="text" name="Arr_mins" placeholder="Arr_mins" required="required" /><br>
+                            <input type="text" name="sulphates" placeholder="sulphates" required="required" /><br>
 
-                            <button type="submit" class="btn btn-block btn-large" style="background-color: orange; color: white;">Predict</button>
+                            <input type="text" name="alcohol" placeholder="alcohol"
+
+                                required="required" /><br>
+
+                            
+
+                            <button type="submit" class="btn btn-block btn-large" style="background-color: rgb(71, 5, 10); color: white;">Predict</button>
 
                         </form>
 
